@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GreetingApp_2115700007</name>
+    </assembly>
+    <members>
+        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppGet">
+            <summary>
+            Handles GET requests to fetch a greeting.
+            </summary>
+            <returns>Returns a success response with a message.</returns>
+        </member>
+        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppPost">
+            <summary>
+            Handles POST requests to create a greeting.
+            </summary>
+            <returns>Returns a success response with a message.</returns>
+        </member>
+        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppPut">
+            <summary>
+            Handles PUT requests to update a greeting.
+            </summary>
+            <returns>Returns a success response with a message.</returns>
+        </member>
+        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppDelete">
+            <summary>
+            Handles DELETE requests to remove a greeting.
+            </summary>
+            <returns>Returns a success response with a message.</returns>
+        </member>
+        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppPatch">
+            <summary>
+            Handles PATCH requests to modify a greeting.
+            </summary>
+            <returns>Returns a success response with a message.</returns>
+        </member>
+    </members>
+</doc>
