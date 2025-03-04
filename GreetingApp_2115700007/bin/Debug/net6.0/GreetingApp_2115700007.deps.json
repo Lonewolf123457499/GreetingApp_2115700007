@@ -137,6 +137,9 @@
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "BusinessLayer/1.0.0": {
+        "dependencies": {
+          "ModelLayer": "1.0.0"
+        },
         "runtime": {
           "BusinessLayer.dll": {
             "assemblyVersion": "1.0.0",

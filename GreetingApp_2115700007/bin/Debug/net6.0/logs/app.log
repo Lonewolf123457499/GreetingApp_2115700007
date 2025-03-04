@@ -320,3 +320,93 @@
 2025-03-04 16:47:53.4698 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppGet (GreetingApp_2115700007) in 23.7709ms | 
 2025-03-04 16:47:53.4698 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppGet (GreetingApp_2115700007)' | 
 2025-03-04 16:47:53.4698 | INFO | Request finished HTTP/2 GET https://localhost:7146/GreetingApp - - - 200 - application/json;+charset=utf-8 44.2000ms | 
+2025-03-04 17:14:20.4679 | INFO | Starting the application... | 
+2025-03-04 17:14:21.5601 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-04 17:14:21.5601 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-04 17:14:21.6475 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-04 17:14:21.6475 | INFO | Hosting environment: Development | 
+2025-03-04 17:14:21.6475 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-04 17:14:22.3842 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-04 17:14:22.6304 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 248.1066ms | 
+2025-03-04 17:14:22.6537 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-04 17:14:22.6537 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 5.8434ms | 
+2025-03-04 17:14:22.6962 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-04 17:14:22.7571 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.9320ms | 
+2025-03-04 17:14:23.4990 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-04 17:14:23.4990 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.1793ms | 
+2025-03-04 17:14:35.0647 | INFO | Request starting HTTP/1.1 POST https://localhost:7146/GreetingApp application/json 55 | 
+2025-03-04 17:14:35.0647 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:14:35.1041 | INFO | Route matched with {action = "GreetingAppPost", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppPost(ModelLayer.DTO.RequestModel) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-04 17:14:35.1613 | INFO | POST request received at GreetingAppPost. | 
+2025-03-04 17:14:35.1721 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-04 17:14:35.1721 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 72.5036ms | 
+2025-03-04 17:14:35.1721 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:14:35.1721 | INFO | Request finished HTTP/1.1 POST https://localhost:7146/GreetingApp application/json 55 - 200 - application/json;+charset=utf-8 118.6195ms | 
+2025-03-04 17:15:51.0810 | INFO | Request starting HTTP/1.1 POST https://localhost:7146/GreetingApp application/json 56 | 
+2025-03-04 17:15:51.0810 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:15:51.0810 | INFO | Route matched with {action = "GreetingAppPost", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppPost(ModelLayer.DTO.RequestModel) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-04 17:15:51.0810 | INFO | POST request received at GreetingAppPost. | 
+2025-03-04 17:15:51.0810 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-04 17:15:51.0810 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 1.4402ms | 
+2025-03-04 17:15:51.0810 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:15:51.0810 | INFO | Request finished HTTP/1.1 POST https://localhost:7146/GreetingApp application/json 56 - 200 - application/json;+charset=utf-8 3.8752ms | 
+2025-03-04 17:18:12.4203 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-04 17:18:12.4434 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 23.8938ms | 
+2025-03-04 17:18:12.4717 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-04 17:18:12.4717 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 2.7211ms | 
+2025-03-04 17:18:12.4896 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-04 17:18:12.5270 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.4090ms | 
+2025-03-04 17:18:12.7508 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-04 17:18:12.7508 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.1272ms | 
+2025-03-04 17:28:22.2313 | INFO | Starting the application... | 
+2025-03-04 17:28:23.9459 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-04 17:28:23.9557 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-04 17:28:24.0277 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-04 17:28:24.0277 | INFO | Hosting environment: Development | 
+2025-03-04 17:28:24.0277 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-04 17:28:25.2542 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-04 17:28:25.8632 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 613.5209ms | 
+2025-03-04 17:28:25.9196 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-04 17:28:25.9196 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 4.7621ms | 
+2025-03-04 17:28:25.9613 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-04 17:28:26.0574 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 96.0944ms | 
+2025-03-04 17:28:26.8423 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-04 17:28:26.8423 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.0748ms | 
+2025-03-04 17:28:36.3984 | INFO | Request starting HTTP/2 POST https://localhost:7146/GreetingApp application/json 51 | 
+2025-03-04 17:28:36.4115 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:28:36.4355 | INFO | Route matched with {action = "GreetingAppPost", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppPost(ModelLayer.DTO.RequestModel) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-04 17:28:36.4818 | INFO | POST request received at GreetingAppPost. | 
+2025-03-04 17:28:36.4818 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-04 17:28:36.4818 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 52.4605ms | 
+2025-03-04 17:28:36.4818 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:28:36.4818 | INFO | Request finished HTTP/2 POST https://localhost:7146/GreetingApp application/json 51 - 200 - application/json;+charset=utf-8 96.2883ms | 
+2025-03-04 17:28:39.1016 | INFO | Request starting HTTP/2 POST https://localhost:7146/GreetingApp application/json 51 | 
+2025-03-04 17:28:39.1016 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:28:39.1016 | INFO | Route matched with {action = "GreetingAppPost", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppPost(ModelLayer.DTO.RequestModel) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-04 17:28:39.1016 | INFO | POST request received at GreetingAppPost. | 
+2025-03-04 17:28:39.1016 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-04 17:28:39.1016 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 1.2293ms | 
+2025-03-04 17:28:39.1016 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:28:39.1016 | INFO | Request finished HTTP/2 POST https://localhost:7146/GreetingApp application/json 51 - 200 - application/json;+charset=utf-8 3.4423ms | 
+2025-03-04 17:36:34.5702 | INFO | Starting the application... | 
+2025-03-04 17:36:35.7488 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-04 17:36:35.7488 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-04 17:36:35.8150 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-04 17:36:35.8150 | INFO | Hosting environment: Development | 
+2025-03-04 17:36:35.8150 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-04 17:36:36.5220 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-04 17:36:36.8255 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 305.9961ms | 
+2025-03-04 17:36:36.8470 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-04 17:36:36.8470 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 4.6564ms | 
+2025-03-04 17:36:36.8778 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-04 17:36:36.9501 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.3632ms | 
+2025-03-04 17:36:38.0526 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-04 17:36:38.0594 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.8140ms | 
+2025-03-04 17:37:04.6235 | INFO | Request starting HTTP/1.1 POST https://localhost:7146/GreetingApp application/json 56 | 
+2025-03-04 17:37:04.6235 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:37:04.6641 | INFO | Route matched with {action = "GreetingAppPost", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppPost(ModelLayer.DTO.RequestModel) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-04 17:37:04.7101 | INFO | POST request received at GreetingAppPost. | 
+2025-03-04 17:37:04.7160 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-04 17:37:04.7160 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 56.0791ms | 
+2025-03-04 17:37:04.7160 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-04 17:37:04.7160 | INFO | Request finished HTTP/1.1 POST https://localhost:7146/GreetingApp application/json 56 - 200 - application/json;+charset=utf-8 102.2156ms | 

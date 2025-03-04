@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interface;
+using BusinessLayer.Service;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.DTO;
 using NLog;
@@ -40,14 +41,15 @@ namespace GreetingApp_2115700007
         /// </summary>
         /// <returns>Returns a success response with a message.</returns>
         [HttpPost]
-        public IActionResult GreetingAppPost()
+        public IActionResult GreetingAppPost(ModelLayer.DTO.RequestModel data)
         {
+            var result = _greetingAppBL.GetGreeting(data.firstName, data.lastName);
             logger.Info("POST request received at GreetingAppPost.");
             var res = new Response<string>
             {
                 success = true,
-                message = "POST method executed successfully",
-                data = ""
+                message = "Post method executed successfully",
+                data = result
             };
             return Ok(res);
         }
