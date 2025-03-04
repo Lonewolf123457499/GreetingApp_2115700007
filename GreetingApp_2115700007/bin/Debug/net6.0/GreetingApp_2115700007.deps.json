@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "GreetingApp_2115700007/1.0.0": {
         "dependencies": {
+          "BusinessLayer": "1.0.0",
           "ModelLayer": "1.0.0",
           "NLog": "5.4.0",
           "NLog.Web.AspNetCore": "5.4.0",
@@ -135,6 +136,14 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "BusinessLayer/1.0.0": {
+        "runtime": {
+          "BusinessLayer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "ModelLayer/1.0.0": {
         "runtime": {
           "ModelLayer.dll": {
@@ -276,6 +285,11 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "BusinessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ModelLayer/1.0.0": {
       "type": "project",

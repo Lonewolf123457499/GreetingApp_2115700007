@@ -1,4 +1,6 @@
 using System.Reflection;
+using BusinessLayer.Interface;
+using BusinessLayer.Service;
 using NLog;
 using NLog.Web;
 
@@ -16,6 +18,7 @@ try
     // Add services to the container
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddScoped<IGreetingAppBL, GreetingAppBL>();
     builder.Services.AddSwaggerGen(options =>
     {
         var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BusinessLayer.Interface;
+using Microsoft.AspNetCore.Mvc;
 using ModelLayer.DTO;
 using NLog;
 
@@ -8,7 +9,13 @@ namespace GreetingApp_2115700007
     [Route("[controller]")]
     public class GreetingAppController : ControllerBase
     {
+        IGreetingAppBL _greetingAppBL;
+        public GreetingAppController(IGreetingAppBL greetingAppBL)
+        {
+            _greetingAppBL = greetingAppBL;
+        }
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+       
 
         /// <summary>
         /// Handles GET requests to fetch a greeting.
@@ -18,11 +25,12 @@ namespace GreetingApp_2115700007
         public IActionResult GreetingAppGet()
         {
             logger.Info("GET request received at GreetingAppGet.");
+            var result =_greetingAppBL.Greeting();
             var res = new Response<string>
             {
                 success = true,
                 message = "GET method executed successfully",
-                data = ""
+                data = result
             };
             return Ok(res);
         }
