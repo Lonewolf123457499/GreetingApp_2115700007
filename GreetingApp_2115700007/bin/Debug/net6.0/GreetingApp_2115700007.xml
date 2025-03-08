@@ -38,15 +38,15 @@
             <returns>Returns a success response with a message.</returns>
             
         </member>
-        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppDelete">
-            <summary>
-            Handles DELETE requests to remove a greeting.
-            </summary>
-            <returns>Returns a success response with a message.</returns>
-        </member>
         <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppPatch(System.Int32,System.String)">
             <summary>
             Handles PATCH requests to modify a greeting.
+            </summary>
+            <returns>Returns a success response with a message.</returns>
+        </member>
+        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppDelete(System.Int32)">
+            <summary>
+            Handles DELETE requests to remove a greeting.
             </summary>
             <returns>Returns a success response with a message.</returns>
         </member>

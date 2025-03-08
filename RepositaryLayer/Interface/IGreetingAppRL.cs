@@ -15,5 +15,6 @@ namespace RepositaryLayer.Interface
         public string GetGreetingById(int id);
         public List<GreetingEntity> GetAllGreetings();
         public GreetingEntity UpdateGreeting(int Id, string message);
+        public bool DeleteById(int id);
     }
 }

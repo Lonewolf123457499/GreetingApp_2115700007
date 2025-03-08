@@ -63,5 +63,16 @@ namespace RepositaryLayer.Service
             }
             return null;
         }
+        public bool DeleteById(int id)
+        {
+            var result = _dbContext.Greetings.FirstOrDefault<GreetingEntity>(e => e.Id == id);
+            if (result != null)
+            {
+                _dbContext.Greetings.Remove(result);
+                _dbContext.SaveChanges();
+                return true;
+            }
+            return false;
+        }
     }
 }

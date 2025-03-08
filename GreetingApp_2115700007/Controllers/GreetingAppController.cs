@@ -65,7 +65,6 @@ namespace GreetingApp_2115700007
         /// 
 
         [HttpGet("getAllGreeting")]
-
         public IActionResult GetAllGreeting()
         {
             logger.Info("GET request received.");
@@ -86,9 +85,7 @@ namespace GreetingApp_2115700007
         /// </summary>
         /// <returns>Returns a success response with a message.</returns>
         /// 
-
-
-        [HttpPost]
+        [HttpPost("addGreeting")]
         public IActionResult GreetingAppPost(SavingGreetingModel data)
         {
             var result = _greetingAppBL.AddGreeting(data);
@@ -120,28 +117,12 @@ namespace GreetingApp_2115700007
             return Ok(res);
         }
 
-        /// <summary>
-        /// Handles DELETE requests to remove a greeting.
-        /// </summary>
-        /// <returns>Returns a success response with a message.</returns>
-        [HttpDelete]
-        public IActionResult GreetingAppDelete()
-        {
-            logger.Info("DELETE request received at GreetingAppDelete.");
-            var res = new Response<string>
-            {
-                success = true,
-                message = "DELETE method executed successfully",
-                data = ""
-            };
-            return Ok(res);
-        }
 
         /// <summary>
         /// Handles PATCH requests to modify a greeting.
         /// </summary>
         /// <returns>Returns a success response with a message.</returns>
-        [HttpPatch]
+        [HttpPatch("updateGreetingById")]
         public IActionResult GreetingAppPatch(int id,string message)
         {
             logger.Info("PATCH request received at GreetingAppPatch.");
@@ -152,6 +133,33 @@ namespace GreetingApp_2115700007
                 success = true,
                 message = "PATCH method executed successfully",
                 data = result.GreetingMessage
+            };
+            return Ok(res);
+        }
+
+
+
+
+
+
+        /// <summary>
+        /// Handles DELETE requests to remove a greeting.
+        /// </summary>
+        /// <returns>Returns a success response with a message.</returns>
+        [HttpDelete("deleteGreetingById")]
+        public IActionResult GreetingAppDelete(int Id)
+        {
+            logger.Info("DELETE request received at GreetingAppDelete.");
+            var result = _greetingAppBL.DeleteById(Id);
+            if (result == null)
+            {
+                return NotFound();
+            }
+            var res = new Response<string>
+            {
+                success = true,
+                message = "DELETE method executed successfully",
+                data = null
             };
             return Ok(res);
         }
