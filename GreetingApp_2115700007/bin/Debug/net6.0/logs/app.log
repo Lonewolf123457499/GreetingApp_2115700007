@@ -532,3 +532,77 @@ WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); |
 2025-03-09 00:09:03.3939 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 3286.2211ms | 
 2025-03-09 00:09:03.3939 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
 2025-03-09 00:09:03.4062 | INFO | Request finished HTTP/2 POST https://localhost:7146/GreetingApp application/json 50 - 200 - application/json;+charset=utf-8 3366.4077ms | 
+2025-03-09 00:45:15.8182 | INFO | Starting the application... | 
+2025-03-09 00:45:18.1930 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-09 00:45:18.1930 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-09 00:45:18.2729 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-09 00:45:18.2729 | INFO | Hosting environment: Development | 
+2025-03-09 00:45:18.2729 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-09 00:45:19.1196 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-09 00:45:19.6591 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-09 00:45:19.6739 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 558.7068ms | 
+2025-03-09 00:45:19.6739 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 16.3450ms | 
+2025-03-09 00:45:19.7173 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-09 00:45:19.8255 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 108.1447ms | 
+2025-03-09 00:45:21.3493 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-09 00:45:21.3493 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.2023ms | 
+2025-03-09 00:45:45.2535 | INFO | Request starting HTTP/2 GET https://localhost:7146/GreetingApp/GetGreetingById?id=1 - - | 
+2025-03-09 00:45:45.2535 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007)' | 
+2025-03-09 00:45:45.2984 | INFO | Route matched with {action = "GetGreetingById", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetGreetingById(Int32) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-09 00:45:45.6543 | INFO | GET request received. | 
+2025-03-09 00:45:46.5875 | INFO | Entity Framework Core 6.0.36 initialized 'GreetingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-09 00:45:48.1246 | INFO | Executed DbCommand (201ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[GreetingMessage]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 | 
+2025-03-09 00:45:48.2111 | INFO | GET response: "welcome from the server" | 
+2025-03-09 00:45:48.2306 | INFO | Executing OkObjectResult, writing value of type 'System.String'. | 
+2025-03-09 00:45:48.2375 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007) in 2933.2604ms | 
+2025-03-09 00:45:48.2375 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007)' | 
+2025-03-09 00:45:48.2375 | INFO | Request finished HTTP/2 GET https://localhost:7146/GreetingApp/GetGreetingById?id=1 - - - 200 - text/plain;+charset=utf-8 2992.7012ms | 
+2025-03-09 00:46:17.1024 | INFO | Request starting HTTP/2 GET https://localhost:7146/GreetingApp/GetGreetingById?id=2 - - | 
+2025-03-09 00:46:17.1024 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007)' | 
+2025-03-09 00:46:17.1024 | INFO | Route matched with {action = "GetGreetingById", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetGreetingById(Int32) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-09 00:46:17.1024 | INFO | GET request received. | 
+2025-03-09 00:46:17.1024 | INFO | Entity Framework Core 6.0.36 initialized 'GreetingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-09 00:46:17.1554 | INFO | Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[GreetingMessage]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 | 
+2025-03-09 00:46:17.1554 | INFO | Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'. | 
+2025-03-09 00:46:17.1554 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007) in 58.4169ms | 
+2025-03-09 00:46:17.1554 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007)' | 
+2025-03-09 00:46:17.1554 | INFO | Request finished HTTP/2 GET https://localhost:7146/GreetingApp/GetGreetingById?id=2 - - - 404 - application/problem+json;+charset=utf-8 61.6908ms | 
+2025-03-09 00:46:26.7044 | INFO | Request starting HTTP/2 GET https://localhost:7146/GreetingApp/GetGreetingById?id=1 - - | 
+2025-03-09 00:46:26.7044 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007)' | 
+2025-03-09 00:46:26.7044 | INFO | Route matched with {action = "GetGreetingById", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetGreetingById(Int32) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-09 00:46:26.7044 | INFO | GET request received. | 
+2025-03-09 00:46:26.7573 | INFO | Entity Framework Core 6.0.36 initialized 'GreetingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-09 00:46:26.7573 | INFO | Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[GreetingMessage]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 | 
+2025-03-09 00:46:26.7573 | INFO | GET response: "welcome from the server" | 
+2025-03-09 00:46:26.7573 | INFO | Executing OkObjectResult, writing value of type 'System.String'. | 
+2025-03-09 00:46:26.7573 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007) in 54.6464ms | 
+2025-03-09 00:46:26.7573 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007)' | 
+2025-03-09 00:46:26.7573 | INFO | Request finished HTTP/2 GET https://localhost:7146/GreetingApp/GetGreetingById?id=1 - - - 200 - text/plain;+charset=utf-8 57.5379ms | 
+2025-03-09 00:47:27.8534 | INFO | Starting the application... | 
+2025-03-09 00:47:28.7787 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-09 00:47:28.7902 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-09 00:47:28.8420 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-09 00:47:28.8420 | INFO | Hosting environment: Development | 
+2025-03-09 00:47:28.8420 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-09 00:47:29.5092 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-09 00:47:29.7582 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 489.7096ms | 
+2025-03-09 00:47:29.7582 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-09 00:47:29.7824 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 16.1740ms | 
+2025-03-09 00:47:29.8213 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-09 00:47:29.8775 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.2114ms | 
+2025-03-09 00:47:30.7411 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-09 00:47:30.7411 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.6204ms | 
+2025-03-09 00:47:46.0359 | INFO | Request starting HTTP/2 GET https://localhost:7146/GreetingApp/GetGreetingById?id=1 - - | 
+2025-03-09 00:47:46.0448 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007)' | 
+2025-03-09 00:47:46.0672 | INFO | Route matched with {action = "GetGreetingById", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetGreetingById(Int32) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-09 00:47:46.4056 | INFO | GET request received. | 
+2025-03-09 00:47:47.3542 | INFO | Entity Framework Core 6.0.36 initialized 'GreetingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 

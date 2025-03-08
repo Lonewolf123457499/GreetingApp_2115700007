@@ -35,5 +35,15 @@ namespace RepositaryLayer.Service
             }
             return result;
         }
+
+        public string GetGreetingById(int id)
+        {
+            var result = _dbContext.Greetings.FirstOrDefault<GreetingEntity>(e => e.Id == id);
+            if (result != null)
+            {
+                return result.GreetingMessage;
+            }
+            return null;
+        }
     }
 }

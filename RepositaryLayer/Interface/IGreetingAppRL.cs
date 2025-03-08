@@ -11,6 +11,7 @@ namespace RepositaryLayer.Interface
 {
     public interface IGreetingAppRL
     {
-        GreetingEntity AddGreeting(SavingGreetingModel greetRequest);
+        public GreetingEntity AddGreeting(SavingGreetingModel greetRequest);
+        public string GetGreetingById(int id);
     }
 }

@@ -37,10 +37,36 @@ namespace GreetingApp_2115700007
             return Ok(res);
         }
 
+
+        /// <summary>
+        /// Get Greeting by Id    
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetGreetingById")]
+        public IActionResult GetGreetingById(int id)
+        {
+            logger.Info("GET request received.");
+            var response = _greetingAppBL.GetGreetingById(id);
+            if (response == null)
+            {
+                return NotFound();
+            }
+            logger.Info("GET response: {@Response}", response);
+            return Ok(response);
+        }
+
+
+
+
         /// <summary>
         /// Handles POST requests to create a greeting.
         /// </summary>
         /// <returns>Returns a success response with a message.</returns>
+        /// 
+
+
         [HttpPost]
         public IActionResult GreetingAppPost(SavingGreetingModel data)
         {
@@ -59,6 +85,7 @@ namespace GreetingApp_2115700007
         /// Handles PUT requests to update a greeting.
         /// </summary>
         /// <returns>Returns a success response with a message.</returns>
+        /// 
         [HttpPut]
         public IActionResult GreetingAppPut()
         {
