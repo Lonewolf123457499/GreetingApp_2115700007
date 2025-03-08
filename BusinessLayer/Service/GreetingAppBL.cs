@@ -1,10 +1,17 @@
 ﻿using BusinessLayer.Interface;
 using ModelLayer.DTO;
+using RepositaryLayer.Entity;
+using RepositaryLayer.Interface;
 
 namespace BusinessLayer.Service
 {
     public class GreetingAppBL : IGreetingAppBL
     {
+        public IGreetingAppRL _greetingRL;
+        public GreetingAppBL(IGreetingAppRL greetingRL)
+        {
+            _greetingRL = greetingRL;
+        }
         public string Greeting()
         {
             return "Hello World!";
@@ -33,6 +40,13 @@ namespace BusinessLayer.Service
             {
                 return "Hello World";
             }
+        }
+
+
+        public GreetingEntity AddGreeting(SavingGreetingModel greetRequest)
+        {
+            var result = _greetingRL.AddGreeting(greetRequest);
+            return result;
         }
 
     }

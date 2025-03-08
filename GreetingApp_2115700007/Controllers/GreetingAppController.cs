@@ -3,6 +3,7 @@ using BusinessLayer.Service;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.DTO;
 using NLog;
+using RepositaryLayer.Entity;
 
 namespace GreetingApp_2115700007
 {
@@ -41,11 +42,11 @@ namespace GreetingApp_2115700007
         /// </summary>
         /// <returns>Returns a success response with a message.</returns>
         [HttpPost]
-        public IActionResult GreetingAppPost(ModelLayer.DTO.RequestModel data)
+        public IActionResult GreetingAppPost(SavingGreetingModel data)
         {
-            var result = _greetingAppBL.GetGreeting(data.firstName, data.lastName);
+            var result = _greetingAppBL.AddGreeting(data);
             logger.Info("POST request received at GreetingAppPost.");
-            var res = new Response<string>
+            var res = new Response<GreetingEntity>
             {
                 success = true,
                 message = "Post method executed successfully",

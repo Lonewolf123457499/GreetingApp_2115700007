@@ -1,8 +1,12 @@
 using System.Reflection;
 using BusinessLayer.Interface;
 using BusinessLayer.Service;
+using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
+using RepositaryLayer.Context;
+using RepositaryLayer.Interface;
+using RepositaryLayer.Service;
 
 var logger = LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
 try
@@ -15,10 +19,22 @@ try
     builder.Logging.ClearProviders();
     builder.Host.UseNLog();
 
+    var connectionString = builder.Configuration.GetConnectionString("GreetingConnection");
+
+    builder.Services.AddDbContext<GreetingDbContext>(options => options.UseSqlServer(connectionString));
+
+
+
     // Add services to the container
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
+
+
     builder.Services.AddScoped<IGreetingAppBL, GreetingAppBL>();
+    builder.Services.AddScoped<IGreetingAppRL, GreetingAppRL>();
+
+
+
     builder.Services.AddSwaggerGen(options =>
     {
         var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

@@ -10,7 +10,7 @@
             </summary>
             <returns>Returns a success response with a message.</returns>
         </member>
-        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppPost(ModelLayer.DTO.RequestModel)">
+        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppPost(ModelLayer.DTO.SavingGreetingModel)">
             <summary>
             Handles POST requests to create a greeting.
             </summary>

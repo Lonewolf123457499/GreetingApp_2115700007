@@ -410,3 +410,125 @@
 2025-03-04 17:37:04.7160 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 56.0791ms | 
 2025-03-04 17:37:04.7160 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
 2025-03-04 17:37:04.7160 | INFO | Request finished HTTP/1.1 POST https://localhost:7146/GreetingApp application/json 56 - 200 - application/json;+charset=utf-8 102.2156ms | 
+2025-03-08 23:40:25.3632 | INFO | Starting the application... | 
+2025-03-08 23:40:25.5508 | ERROR | Application encountered a critical error and stopped. | System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BusinessLayer.Interface.IGreetingAppBL Lifetime: Scoped ImplementationType: BusinessLayer.Service.GreetingAppBL': Unable to resolve service for type 'RepositaryLayer.Interface.IGreetingAppRL' while attempting to activate 'BusinessLayer.Service.GreetingAppBL'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'RepositaryLayer.Interface.IGreetingAppRL' while attempting to activate 'BusinessLayer.Service.GreetingAppBL'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+2025-03-08 23:50:54.1419 | INFO | Starting the application... | 
+2025-03-08 23:50:55.1118 | ERROR | Application encountered a critical error and stopped. | System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BusinessLayer.Interface.IGreetingAppBL Lifetime: Scoped ImplementationType: BusinessLayer.Service.GreetingAppBL': Unable to resolve service for type 'RepositaryLayer.Interface.IGreetingAppRL' while attempting to activate 'BusinessLayer.Service.GreetingAppBL'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'RepositaryLayer.Interface.IGreetingAppRL' while attempting to activate 'BusinessLayer.Service.GreetingAppBL'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+2025-03-08 23:51:49.7932 | INFO | Starting the application... | 
+2025-03-08 23:51:51.4730 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-08 23:51:51.4838 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-08 23:51:51.5421 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-08 23:51:51.5421 | INFO | Hosting environment: Development | 
+2025-03-08 23:51:51.5421 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-08 23:51:53.5003 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-08 23:51:53.9346 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 437.7408ms | 
+2025-03-08 23:51:53.9756 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-08 23:51:53.9756 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 5.6261ms | 
+2025-03-08 23:51:54.0018 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-08 23:51:54.3729 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 371.1123ms | 
+2025-03-08 23:51:55.6149 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-08 23:51:55.6252 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.3118ms | 
+2025-03-08 23:52:03.8702 | INFO | Request starting HTTP/2 GET https://localhost:7146/GreetingApp - - | 
+2025-03-08 23:52:03.8702 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppGet (GreetingApp_2115700007)' | 
+2025-03-08 23:52:03.8940 | INFO | Route matched with {action = "GreetingAppGet", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppGet() on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-08 23:52:04.2771 | INFO | GET request received at GreetingAppGet. | 
+2025-03-08 23:52:04.2854 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-08 23:52:04.2854 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppGet (GreetingApp_2115700007) in 394.7157ms | 
+2025-03-08 23:52:04.2854 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppGet (GreetingApp_2115700007)' | 
+2025-03-08 23:52:04.2854 | INFO | Request finished HTTP/2 GET https://localhost:7146/GreetingApp - - - 200 - application/json;+charset=utf-8 429.4679ms | 
+2025-03-08 23:52:18.3193 | INFO | Request starting HTTP/2 POST https://localhost:7146/GreetingApp application/json 51 | 
+2025-03-08 23:52:18.3193 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-08 23:52:18.3426 | INFO | Route matched with {action = "GreetingAppPost", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppPost(ModelLayer.DTO.RequestModel) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-08 23:52:18.4104 | INFO | POST request received at GreetingAppPost. | 
+2025-03-08 23:52:18.4104 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-08 23:52:18.4104 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 68.0589ms | 
+2025-03-08 23:52:18.4104 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-08 23:52:18.4104 | INFO | Request finished HTTP/2 POST https://localhost:7146/GreetingApp application/json 51 - 200 - application/json;+charset=utf-8 92.4761ms | 
+2025-03-08 23:52:52.4107 | INFO | Starting the application... | 
+2025-03-08 23:52:52.5479 | ERROR | Application encountered a critical error and stopped. | Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\Program.cs:line 45
+2025-03-08 23:53:08.3199 | INFO | Starting the application... | 
+2025-03-08 23:53:08.4260 | ERROR | Application encountered a critical error and stopped. | Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\Program.cs:line 45
+2025-03-08 23:54:54.5176 | INFO | Starting the application... | 
+2025-03-08 23:54:56.4915 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-08 23:54:56.5171 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-08 23:54:56.5865 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-08 23:54:56.5865 | INFO | Hosting environment: Development | 
+2025-03-08 23:54:56.5865 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-08 23:54:57.5761 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-08 23:54:57.9848 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 410.8623ms | 
+2025-03-08 23:54:58.0555 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-08 23:54:58.1597 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 104.1965ms | 
+2025-03-08 23:54:58.1870 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-08 23:54:58.3245 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 143.3022ms | 
+2025-03-08 23:54:59.7844 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-08 23:54:59.7924 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.9507ms | 
+2025-03-08 23:55:10.2609 | INFO | Request starting HTTP/2 POST https://localhost:7146/GreetingApp application/json 51 | 
+2025-03-08 23:55:10.2865 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-08 23:55:10.2865 | INFO | Route matched with {action = "GreetingAppPost", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppPost(ModelLayer.DTO.RequestModel) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-08 23:55:10.5780 | INFO | POST request received at GreetingAppPost. | 
+2025-03-08 23:55:10.5830 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-08 23:55:10.5830 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 274.2218ms | 
+2025-03-08 23:55:10.5830 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-08 23:55:10.5830 | INFO | Request finished HTTP/2 POST https://localhost:7146/GreetingApp application/json 51 - 200 - application/json;+charset=utf-8 334.6598ms | 
+2025-03-09 00:07:47.8928 | INFO | Starting the application... | 
+2025-03-09 00:07:49.0099 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-09 00:07:49.0099 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-09 00:07:49.0705 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-09 00:07:49.0705 | INFO | Hosting environment: Development | 
+2025-03-09 00:07:49.0705 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-09 00:07:50.1394 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-09 00:07:50.9117 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 775.5991ms | 
+2025-03-09 00:07:50.9293 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-09 00:07:50.9293 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 5.9235ms | 
+2025-03-09 00:07:50.9741 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-09 00:07:51.0308 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.6193ms | 
+2025-03-09 00:07:51.8981 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-09 00:07:51.8981 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.9612ms | 
+2025-03-09 00:09:00.0398 | INFO | Request starting HTTP/2 POST https://localhost:7146/GreetingApp application/json 50 | 
+2025-03-09 00:09:00.0398 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-09 00:09:00.0946 | INFO | Route matched with {action = "GreetingAppPost", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppPost(ModelLayer.DTO.SavingGreetingModel) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-09 00:09:01.5705 | INFO | Entity Framework Core 6.0.36 initialized 'GreetingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-09 00:09:03.0253 | INFO | Executed DbCommand (95ms) [Parameters=[@__greetRequest_GreetingMessage_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[GreetingMessage]
+FROM [Greetings] AS [g]
+WHERE [g].[GreetingMessage] = @__greetRequest_GreetingMessage_0 | 
+2025-03-09 00:09:03.3125 | INFO | Executed DbCommand (25ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Greetings] ([GreetingMessage])
+VALUES (@p0);
+SELECT [Id]
+FROM [Greetings]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); | 
+2025-03-09 00:09:03.3715 | INFO | POST request received at GreetingAppPost. | 
+2025-03-09 00:09:03.3715 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[RepositaryLayer.Entity.GreetingEntity, RepositaryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. | 
+2025-03-09 00:09:03.3939 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007) in 3286.2211ms | 
+2025-03-09 00:09:03.3939 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPost (GreetingApp_2115700007)' | 
+2025-03-09 00:09:03.4062 | INFO | Request finished HTTP/2 POST https://localhost:7146/GreetingApp application/json 50 - 200 - application/json;+charset=utf-8 3366.4077ms | 
