@@ -142,14 +142,16 @@ namespace GreetingApp_2115700007
         /// </summary>
         /// <returns>Returns a success response with a message.</returns>
         [HttpPatch]
-        public IActionResult GreetingAppPatch()
+        public IActionResult GreetingAppPatch(int id,string message)
         {
             logger.Info("PATCH request received at GreetingAppPatch.");
+
+            var result = _greetingAppBL.UpdateGreeting(id, message);
             var res = new Response<string>
             {
                 success = true,
                 message = "PATCH method executed successfully",
-                data = ""
+                data = result.GreetingMessage
             };
             return Ok(res);
         }

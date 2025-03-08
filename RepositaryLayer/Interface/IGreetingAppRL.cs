@@ -14,5 +14,6 @@ namespace RepositaryLayer.Interface
         public GreetingEntity AddGreeting(SavingGreetingModel greetRequest);
         public string GetGreetingById(int id);
         public List<GreetingEntity> GetAllGreetings();
+        public GreetingEntity UpdateGreeting(int Id, string message);
     }
 }

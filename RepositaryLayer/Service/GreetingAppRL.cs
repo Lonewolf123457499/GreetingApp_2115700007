@@ -50,5 +50,18 @@ namespace RepositaryLayer.Service
         {
             return _dbContext.Greetings.ToList();
         }
+
+
+        public GreetingEntity UpdateGreeting(int Id ,string message)
+        {
+            var result = _dbContext.Greetings.FirstOrDefault<GreetingEntity>(e => e.Id == Id);
+            if (result != null)
+            {
+                result.GreetingMessage = message;
+                _dbContext.SaveChanges();
+                return result;
+            }
+            return null;
+        }
     }
 }

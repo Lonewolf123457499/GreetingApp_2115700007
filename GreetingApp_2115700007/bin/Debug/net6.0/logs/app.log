@@ -750,3 +750,49 @@ FROM [Greetings] AS [g] |
 2025-03-09 01:19:22.3480 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GetAllGreeting (GreetingApp_2115700007) in 3094.5067ms | 
 2025-03-09 01:19:22.3480 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GetAllGreeting (GreetingApp_2115700007)' | 
 2025-03-09 01:19:22.3606 | INFO | Request finished HTTP/2 GET https://localhost:7146/GreetingApp/getAllGreeting - - - 200 - application/json;+charset=utf-8 3143.4747ms | 
+2025-03-09 01:42:02.8490 | INFO | Starting the application... | 
+2025-03-09 01:42:04.8360 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-09 01:42:04.8520 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-09 01:42:04.9438 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-09 01:42:04.9438 | INFO | Hosting environment: Development | 
+2025-03-09 01:42:04.9438 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-09 01:42:06.4382 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-09 01:42:06.8643 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 430.0517ms | 
+2025-03-09 01:42:06.9140 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-09 01:42:06.9140 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 8.3312ms | 
+2025-03-09 01:42:06.9544 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-09 01:42:07.0702 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 115.7094ms | 
+2025-03-09 01:42:08.3087 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-09 01:42:08.3198 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.1269ms | 
+2025-03-09 01:42:31.9331 | INFO | Starting the application... | 
+2025-03-09 01:42:33.1333 | INFO | Now listening on: https://localhost:7146 | 
+2025-03-09 01:42:33.1472 | INFO | Now listening on: http://localhost:5215 | 
+2025-03-09 01:42:33.2149 | INFO | Application started. Press Ctrl+C to shut down. | 
+2025-03-09 01:42:33.2149 | INFO | Hosting environment: Development | 
+2025-03-09 01:42:33.2149 | INFO | Content root path: C:\Users\lenovo\OneDrive\Desktop\New folder (5)\GreetingApp_2115700007\ | 
+2025-03-09 01:42:34.3595 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/index.html - - | 
+2025-03-09 01:42:34.6739 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/index.html - - - 200 - text/html;charset=utf-8 318.0067ms | 
+2025-03-09 01:42:34.6954 | INFO | Request starting HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-09 01:42:34.6954 | INFO | Request finished HTTP/2 GET https://localhost:7146/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 4.7112ms | 
+2025-03-09 01:42:34.7319 | INFO | Request starting HTTP/2 GET https://localhost:7146/_vs/browserLink - - | 
+2025-03-09 01:42:34.8053 | INFO | Request finished HTTP/2 GET https://localhost:7146/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 73.4243ms | 
+2025-03-09 01:42:35.8552 | INFO | Request starting HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - | 
+2025-03-09 01:42:35.8688 | INFO | Request finished HTTP/2 GET https://localhost:7146/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 13.8755ms | 
+2025-03-09 01:43:32.5706 | INFO | Request starting HTTP/2 PATCH https://localhost:7146/GreetingApp?id=1&message=welcome%20from%20vedant - - | 
+2025-03-09 01:43:32.5872 | INFO | Executing endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPatch (GreetingApp_2115700007)' | 
+2025-03-09 01:43:32.6144 | INFO | Route matched with {action = "GreetingAppPatch", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GreetingAppPatch(Int32, System.String) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
+2025-03-09 01:43:32.9071 | INFO | PATCH request received at GreetingAppPatch. | 
+2025-03-09 01:43:33.6096 | INFO | Entity Framework Core 6.0.36 initialized 'GreetingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-09 01:43:34.8098 | INFO | Executed DbCommand (120ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[GreetingMessage]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__Id_0 | 
+2025-03-09 01:43:35.0243 | INFO | Executed DbCommand (17ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Greetings] SET [GreetingMessage] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; | 
+2025-03-09 01:43:35.0565 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.Response`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-09 01:43:35.0653 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GreetingAppPatch (GreetingApp_2115700007) in 2444.4786ms | 
+2025-03-09 01:43:35.0653 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GreetingAppPatch (GreetingApp_2115700007)' | 
+2025-03-09 01:43:35.0653 | INFO | Request finished HTTP/2 PATCH https://localhost:7146/GreetingApp?id=1&message=welcome%20from%20vedant - - - 200 - application/json;+charset=utf-8 2504.6083ms | 

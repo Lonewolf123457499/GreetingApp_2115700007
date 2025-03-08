@@ -61,5 +61,12 @@ namespace BusinessLayer.Service
             return result;
         }
 
+
+        public GreetingEntity UpdateGreeting(int id, string message)
+        {
+            var result = _greetingRL.UpdateGreeting(id, message);
+            return result;
+        }
+
     }
 }

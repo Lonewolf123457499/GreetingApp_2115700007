@@ -44,7 +44,7 @@
             </summary>
             <returns>Returns a success response with a message.</returns>
         </member>
-        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppPatch">
+        <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppPatch(System.Int32,System.String)">
             <summary>
             Handles PATCH requests to modify a greeting.
             </summary>
