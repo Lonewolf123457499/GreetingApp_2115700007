@@ -58,6 +58,27 @@ namespace GreetingApp_2115700007
         }
 
 
+        /// <summary>
+        /// Handles Get requests to get all the greeeting
+        /// </summary>
+        /// <returns>Returns a success response with a message.</returns>
+        /// 
+
+        [HttpGet("getAllGreeting")]
+
+        public IActionResult GetAllGreeting()
+        {
+            logger.Info("GET request received.");
+            var response = _greetingAppBL.GetAllGreetings();
+            if (response == null)
+            {
+                return NotFound();
+            }
+            logger.Info("GET response: {@Response}", response);
+            return Ok(response);
+        }
+
+
 
 
         /// <summary>

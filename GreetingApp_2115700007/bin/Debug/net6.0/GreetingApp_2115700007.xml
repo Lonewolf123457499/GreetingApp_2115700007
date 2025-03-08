@@ -17,6 +17,13 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:GreetingApp_2115700007.GreetingAppController.GetAllGreeting">
+            <summary>
+            Handles Get requests to get all the greeeting
+            </summary>
+            <returns>Returns a success response with a message.</returns>
+            
+        </member>
         <member name="M:GreetingApp_2115700007.GreetingAppController.GreetingAppPost(ModelLayer.DTO.SavingGreetingModel)">
             <summary>
             Handles POST requests to create a greeting.

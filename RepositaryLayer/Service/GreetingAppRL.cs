@@ -45,5 +45,10 @@ namespace RepositaryLayer.Service
             }
             return null;
         }
+
+        public List<GreetingEntity> GetAllGreetings()
+        {
+            return _dbContext.Greetings.ToList();
+        }
     }
 }
