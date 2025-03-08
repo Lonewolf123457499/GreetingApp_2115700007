@@ -606,3 +606,12 @@ WHERE [g].[Id] = @__id_0 |
 2025-03-09 00:47:46.0672 | INFO | Route matched with {action = "GetGreetingById", controller = "GreetingApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetGreetingById(Int32) on controller GreetingApp_2115700007.GreetingAppController (GreetingApp_2115700007). | 
 2025-03-09 00:47:46.4056 | INFO | GET request received. | 
 2025-03-09 00:47:47.3542 | INFO | Entity Framework Core 6.0.36 initialized 'GreetingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-09 00:47:48.5937 | INFO | Executed DbCommand (89ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[GreetingMessage]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 | 
+2025-03-09 00:47:48.7383 | INFO | GET response: "welcome from the server" | 
+2025-03-09 00:47:48.7612 | INFO | Executing OkObjectResult, writing value of type 'System.String'. | 
+2025-03-09 00:47:48.7682 | INFO | Executed action GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007) in 2694.6621ms | 
+2025-03-09 00:47:48.7682 | INFO | Executed endpoint 'GreetingApp_2115700007.GreetingAppController.GetGreetingById (GreetingApp_2115700007)' | 
+2025-03-09 00:47:48.7682 | INFO | Request finished HTTP/2 GET https://localhost:7146/GreetingApp/GetGreetingById?id=1 - - - 200 - text/plain;+charset=utf-8 2742.4804ms | 
